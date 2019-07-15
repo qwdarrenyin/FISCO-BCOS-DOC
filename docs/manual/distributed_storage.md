@@ -292,7 +292,7 @@ item_name: apple
 
 ## 通过代理访问MySQL
 
-本使用手册仅对节点版本为2.0.0-rc3的有效，如果需要在2.0.0-rc2中使用“通过代理访问MySQL”的访问方式去搭建分布式存储环境。请参考文档[分布式存储搭建方法](https://fisco-bcos-documentation.readthedocs.io/zh_CN/release-2.0.0-rc2/docs/manual/amdbconfig.html)
+本使用手册仅对2.0.0-rc3及以上版本的节点有效，如果需要在2.0.0-rc2中使用“通过代理访问MySQL”的访问方式去搭建分布式存储环境。请参考文档[分布式存储搭建方法](https://fisco-bcos-documentation.readthedocs.io/zh_CN/v2.0.0-rc2/docs/manual/amdbconfig.html)
 
 ### 逻辑架构图
 多群组架构是指区块链节点支持启动多个群组，群组间交易处理、数据存储、区块共识相互隔离的。因此群组下的每一个节点对应一个amdb-proxy实例，例如，区块链网络中，有三个节点A,B,C，其中A,B属于群组1,B,C属于群组2。节点A和C分别对应1个数据库实例，B节点对应了2个数据库实例，逻辑架构图如下：
